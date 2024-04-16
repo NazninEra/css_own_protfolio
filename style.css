@@ -1,0 +1,133 @@
+body{
+    margin: 80px;
+}
+.logo{
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    position: relative;
+    background-color: #c8d8fa;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.img img{
+    width: 100px;
+    cursor: pointer;
+}
+.img{
+    width: 85%;
+    margin: 20px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+div ul li a{
+    text-decoration: none;
+    color: rgb(105, 73, 136);
+}
+div ul li a:hover{
+    color: orangered;
+}
+.info{
+    padding: 20px;
+}
+.info h1{
+    font-size: 50px;
+    color: grey;
+    margin-bottom: 20px;
+}
+span{
+    color: blueviolet;
+}
+.info a{
+    background-color: lightcoral;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: palegoldenrod;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 5px;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img{
+    height: 400px;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: bottom 1s, left 1s;
+    
+}
+.img-box:hover .back-img{
+    bottom: 20px;
+}
+.img-box:hover .main-img{
+    left: 95%;
+}
+.logo-pic img{
+    width: 80px;
+    height: 60px;
+
+}
+.card-section{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.main-section{
+    margin: 60px 10px;
+    background-color: lavenderblush;
+    padding: 20px 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card-section div{
+    height: 200px;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    transition: 1s;
+    
+}
+.card-section div:hover{
+    background-color: aliceblue;
+}
+.about-me{
+    background-color: thistle;
+    margin: 10px 10px;
+    padding: 20px 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media only screen and (max-width: 600px){
+    .logo{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-section div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+} 
